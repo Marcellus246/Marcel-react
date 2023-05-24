@@ -27,8 +27,8 @@ const Products = () => {
               <CardProduct
                 name={produk.id}
                 img={produk.email}
-                price={produk.password}
-                category={produk.name}
+                price={produk.role}
+                category={produk.avatar}
               />
             </div>
           );
