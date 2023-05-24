@@ -25,10 +25,10 @@ const Products = () => {
           return (
             <div className="Card col-lg d-flex pt-3">
               <CardProduct
-                name={produk.id}
-                img={produk.email}
+                name={produk.name}
+                img={produk.avatar}
                 price={produk.role}
-                category={produk.avatar}
+                category={produk.email}
               />
             </div>
           );
