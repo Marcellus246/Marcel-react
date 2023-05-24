@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
 const Products = () => {
-  const url = "https://fakestoreapi.com/products";
+  const url = "https://api.publicapis.org/entries";
   const [products, setProducts] = useState([]);
 
   const getDataProducts = async () => {
@@ -25,10 +25,10 @@ const Products = () => {
           return (
             <div className="Card col-lg d-flex pt-3">
               <CardProduct
-                name={produk.title}
-                img={produk.image}
-                price={produk.price}
-                category={produk.category}
+                name={produk.count}
+                img={produk.entries}
+                price={produk.AdoptAPet}
+                category={produk.Description}
               />
             </div>
           );
