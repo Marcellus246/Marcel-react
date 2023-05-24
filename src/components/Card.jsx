@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
 const Products = () => {
-  const url = "https://api.escuelajs.co/api/v1/users";
+  const url = "https://api.escuelajs.co/api/v1/products";
   const [products, setProducts] = useState([]);
 
   const getDataProducts = async () => {
@@ -26,9 +26,9 @@ const Products = () => {
             <div className="Card col-lg d-flex pt-3">
               <CardProduct
                 name={produk.name}
-                img={produk.avatar}
-                price={produk.role}
-                category={produk.email}
+                img={produk.images}
+                price={produk.title}
+                category={produk.id}
               />
             </div>
           );
