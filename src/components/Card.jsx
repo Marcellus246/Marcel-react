@@ -48,8 +48,8 @@ function CardProduct(props) {
         height="250"
       />
       <Card.Body>
-        <Card.Title>{props.name}</Card.Title>
-        <Card.Text>{props.category}<br></br>Role: {props.price}</Card.Text>
+        <Card.Title>{props.price}</Card.Title>
+        <Card.Text></Card.Text>
         <Button className="ml-auto" href={props.img}variant="primary">View</Button>
       </Card.Body>
     </Card>
