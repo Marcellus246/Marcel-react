@@ -5,7 +5,7 @@ const Navbar1 = () => {
     <div className="animate__animated animate__fadeInDown animate__delay-1s">
     <Navbar bg="primary" variant="dark">
         <Container>
-          <Navbar.Brand href="#" className="fw-bold">Handes Shop</Navbar.Brand>
+          <Navbar.Brand href="#" className="fw-bold">Marcel House</Navbar.Brand>
           {/* <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#features">Features</Nav.Link>

@@ -19,7 +19,7 @@ const Products = () => {
   return (
     <div className="container">
       <div className="row pt-5">
-        <h1 className="fw-bold animate__animated animate__fadeInUp animate__delay-1s">Welcome To Handes Shop</h1>
+        <h1 className="fw-bold animate__animated animate__fadeInUp animate__delay-1s">Welcome To My Home</h1>
         <p className="animate__animated animate__fadeInUp animate__delay-1s">Catalog</p>
         {products.map((produk) => {
           return (
@@ -49,8 +49,8 @@ function CardProduct(props) {
       />
       <Card.Body>
         <Card.Title>{props.name}</Card.Title>
-        <Card.Text>{props.category}<br></br>Price: {props.price}$</Card.Text>
-        <Button className="ml-auto" href={props.img}variant="primary">Beli</Button>
+        <Card.Text>{props.category}<br></br>Role: {props.price}</Card.Text>
+        <Button className="ml-auto" href={props.img}variant="primary">View</Button>
       </Card.Body>
     </Card>
   );
