@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
 const Products = () => {
-  const url = "https://api.publicapis.org/entries";
+  const url = "https://api.escuelajs.co/api/v1/users";
   const [products, setProducts] = useState([]);
 
   const getDataProducts = async () => {
@@ -25,10 +25,10 @@ const Products = () => {
           return (
             <div className="Card col-lg d-flex pt-3">
               <CardProduct
-                name={produk.count}
-                img={produk.entries}
-                price={produk.AdoptAPet}
-                category={produk.Description}
+                name={produk.id}
+                img={produk.email}
+                price={produk.password}
+                category={produk.name}
               />
             </div>
           );
